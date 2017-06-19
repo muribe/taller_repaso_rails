@@ -27,7 +27,7 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: test_taller2
+  database: dbmfkadc056431
   pool: 5
   username: ksgmeaghmprspc
   password: d39791510a6890f82687dbb755ca01a1e21c47bd90c7ff7e759cadfef3440c08
