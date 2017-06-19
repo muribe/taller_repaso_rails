@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def x
-    @user = show_all_user
+   
   end
   def save_user
     if params[:name].present? && params[:last_name].present? && params[:email].present? && params[:age].present?
