@@ -10,6 +10,6 @@ class PagesController < ApplicationController
     
   end
   def show_all_user
-    User.all
+    @user=User.all
   end
 end
