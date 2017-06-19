@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  root 'pages#x'
+  root 'pages#landing'
 
+  get 'pages/landing'
+  
   post 'pages/x'
+  get 'pages/x'
 
   post 'pages/save_user'
   
