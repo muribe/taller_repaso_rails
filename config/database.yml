@@ -24,6 +24,16 @@
 #   <<: *default
 #   database: db/production.sqlite3
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: test_taller2
+  pool: 5
+  username: ksgmeaghmprspc
+  password: d39791510a6890f82687dbb755ca01a1e21c47bd90c7ff7e759cadfef3440c08
+  host: ec2-23-21-220-152.compute-1.amazonaws.com
+  port: 5432
+
 development:
   adapter: postgresql
   encoding: unicode
@@ -31,7 +41,6 @@ development:
   pool: 5
   username: myckel
   password: 1234
-
 test:
   adapter: postgresql
   encoding: unicode
