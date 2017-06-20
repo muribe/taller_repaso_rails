@@ -9,9 +9,9 @@ class PagesController < ApplicationController
     if params[:name].present? && params[:last_name].present? && params[:email].present? && params[:age].present?
         @user=User.new(name: params[:name],last_name: params[:last_name],email: params[:email],age: params[:age]) 
         @user.save
-        redirect_to :back, notice:"Usuario creado correctamente" 
+        redirect_back(fallback_location: root_path, notice:"Usuario creado correctamente" ) 
     else    
-        redirect_to :back, alert: "Complete todos los campos"
+        redirect_back(fallback_location: root_path, alert: "Complete todos los campos")
     end
 
   end
